@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container" id="TicTacToe">
+        <h1>Tic-Tac-Toe Game</h1>
+        <h3>Game Instruction - </h3><p>Game start on just click on box
+            <br>First Player Start as <b>PLAYER X</b> <br>
+            Second Player Start as <b>PLAYER 0</b><br>
+        </p> 
+                <input type="text" class="box" id="box1" onclick="CheckPlayer1();Winner()" readonly>
+                <input type="text" class="box" id="box2" onclick="CheckPlayer2();Winner()" readonly>
+                <input type="text" class="box" id="box3" onclick="CheckPlayer3();Winner()" readonly>
+        <br>
+                <input type="text" class="box" id="box4" onclick="CheckPlayer4();Winner()" readonly>
+                <input type="text" class="box" id="box5" onclick="CheckPlayer5();Winner()" readonly>
+                <input type="text" class="box" id="box6" onclick="CheckPlayer6();Winner()" readonly>
+        <br>
+                <input type="text" class="box" id="box7" onclick="CheckPlayer7();Winner()" readonly>
+                <input type="text" class="box" id="box8" onclick="CheckPlayer8();Winner()" readonly>
+                <input type="text" class="box" id="box9" onclick="CheckPlayer9();Winner()" readonly>
+
+        <div class="reset">
+            <br>
+            <span id="result"></span><br>
+            <input type="button" value="Reset" id="Reset" onclick="ResetAllBox()">
+        </div>
+    </div>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
